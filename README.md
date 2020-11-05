@@ -6,6 +6,13 @@ PURPOSE OF PROJECT: TDS 3651 - Visual Information Processing Project
 
 VERSION or DATE: October 2020
 
+HOW TO START THIS PROJECT: 
+1. Download as zip file and run "HAAR-SELFIE CAPTURE WITH SMILE DETECTION.ipynb" & "MAR-SELFIE CAPTURE WITH SMILE DETECTION.ipynb" files using Jupyter Notebook. 
+2. For "dataset" folder, refer Section 4.1 and download the images/video.
+3. "images" folder contains nothing as results will be saved there after running the Notebook.
+4. All csv files are based on our project result. If you use other datasets, the data in csv files might be different.
+5. "shape_predictor_68_face_landmarks.dat" (classifier for MAR) is not included.
+
 AUTHORS:
 1. Nur Sabrina Syazwani binti Mazlan
 2. Nurul Nadiah binti Zulkifli
@@ -100,5 +107,3 @@ As a conclusion, this project was to capture a selfie with smile detection. Two 
 * [6] Hromada, D, "SMILEsmileD," GitHub, 28 October 2010. [Online]. Available: https://github.com/hromi/SMILEsmileD.
 * [7] Huzeyfe Kurt, "Make People Smile Project," 15 May 2016. [Online]. Available: https://www.youtube.com/watch?v=8YuBxP4CKZc. 
 
-
-### Note: "shape_predictor_68_face_landmarks.dat" is not included.
