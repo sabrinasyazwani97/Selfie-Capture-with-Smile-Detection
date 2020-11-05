@@ -1,6 +1,6 @@
 # This is the project README file
 
-PROJECT TITLE: Selfie-Capture-with-Smile-Detection
+PROJECT TITLE: Selfie Capture with Smile Detection
 
 PURPOSE OF PROJECT: TDS 3651 - Visual Information Processing Project
 
