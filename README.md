@@ -14,13 +14,13 @@ AUTHORS:
 INSTITUTION: Multimedia University
 
 
-# ABSTRACT
+# 1. ABSTRACT
 A smile represents satisfaction and happiness. Many applications are created using smile detection technology, for example product rating, patient monitoring, image capturing, video conferencing and interactive systems. In this project, we focused on how to apply smile detection for image capturing specifically for selfie capture and to compare which methods perform better at smile detection by measuring the accuracy, precision, recall, and F1-score. Methods used for this project are Haar Feature Selection and Mouth Aspect Ratio (MAR). Both methods were tested by using datasets of images, videos and real-time webcam. The comparison for both methods was evaluated based on the evaluation metrics. The results showed that MAR is generally better at detecting a smile on non-static images compared to Haar. However, both methods did not perform well at detecting smiles for static images. Nonetheless, they showed good results on capturing selfies using the real-time webcam. Some improvements could be made to improve the performance for both methods, such as the features used and haarcascades values for Haar, as well as the threshold values set for MAR.
 
-# 1. INTRODUCTION
+# 2. INTRODUCTION
 In this modern day and age, smartphones play a crucial role in taking pictures. Less and less people have a tendency to bring around their cameras as smartphones are generally a “one size fits all” in terms of having a lot of similar uses to those of a camera. For example, pictures taken from a smartphone could sometimes beat those of a professional camera, plus they are much cheaper too than some. In addition, smartphones are much more used due to the presence of a front and back camera that enables users to take pictures from both angles. The front camera in a smartphone is especially used for “selfies” or also known as self-portraits. It could also capture a photo full of people for a family photo, friendship photo and others. Selfies are taken while one extends their arm at a certain position to get the best view of one-self. Then, it is continued by clicking the button on the phone to take the picture. Therefore, this sometimes limits the outcome of the picture. It is very difficult for people to hold the phone while simultaneously taking the picture. The image may get blurry due to the movement of the hand during the clicking of the button. Furthermore, sometimes the images taken do not capture the people at their best. One may be smiling while another does not. Henceforth, the computer vision that will be investigated is smile detection. With smile detection, the camera will only capture the image once everyone detected inside the image is smiling. Consequently, the perfect photo with no blurry areas and with every person smiling will be taken.
 
-# 2. APPROACH
+# 3. APPROACH
 OpenCV is an open source computer vision library for commercial and research use. It is one of the most widely used libraries in image processing. The OpenCV was chosen for its extensive library, simple usage and extensive user network. Our study is to compare two existing algorithms which Haar Feature Selection [4] and Mouth Aspect Ratio [5].
 
 ## 3.1. Mouth Aspect Ratio (MAR) Technique
