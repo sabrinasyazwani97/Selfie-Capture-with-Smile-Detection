@@ -24,8 +24,10 @@ INSTITUTION: Multimedia University
 # 1. ABSTRACT
 A smile represents satisfaction and happiness. Many applications are created using smile detection technology, for example product rating, patient monitoring, image capturing, video conferencing and interactive systems. In this project, we focused on how to apply smile detection for image capturing specifically for selfie capture and to compare which methods perform better at smile detection by measuring the accuracy, precision, recall, and F1-score. Methods used for this project are Haar Feature Selection and Mouth Aspect Ratio (MAR). Both methods were tested by using datasets of images, videos and real-time webcam. The comparison for both methods was evaluated based on the evaluation metrics. The results showed that MAR is generally better at detecting a smile on non-static images compared to Haar. However, both methods did not perform well at detecting smiles for static images. Nonetheless, they showed good results on capturing selfies using the real-time webcam. Some improvements could be made to improve the performance for both methods, such as the features used and haarcascades values for Haar, as well as the threshold values set for MAR.
 
+
 # 2. INTRODUCTION
 In this modern day and age, smartphones play a crucial role in taking pictures. Less and less people have a tendency to bring around their cameras as smartphones are generally a “one size fits all” in terms of having a lot of similar uses to those of a camera. For example, pictures taken from a smartphone could sometimes beat those of a professional camera, plus they are much cheaper too than some. In addition, smartphones are much more used due to the presence of a front and back camera that enables users to take pictures from both angles. The front camera in a smartphone is especially used for “selfies” or also known as self-portraits. It could also capture a photo full of people for a family photo, friendship photo and others. Selfies are taken while one extends their arm at a certain position to get the best view of one-self. Then, it is continued by clicking the button on the phone to take the picture. Therefore, this sometimes limits the outcome of the picture. It is very difficult for people to hold the phone while simultaneously taking the picture. The image may get blurry due to the movement of the hand during the clicking of the button. Furthermore, sometimes the images taken do not capture the people at their best. One may be smiling while another does not. Henceforth, the computer vision that will be investigated is smile detection. With smile detection, the camera will only capture the image once everyone detected inside the image is smiling. Consequently, the perfect photo with no blurry areas and with every person smiling will be taken.
+
 
 # 3. APPROACH
 OpenCV is an open source computer vision library for commercial and research use. It is one of the most widely used libraries in image processing. The OpenCV was chosen for its extensive library, simple usage and extensive user network. Our study is to compare two existing algorithms which Haar Feature Selection [4] and Mouth Aspect Ratio [5].
@@ -74,6 +76,7 @@ After the face is detected, the structure for the mouth hence a smile will be de
 ## 3.3. Auto Capture Image during Video Live Stream
 The study will be using the VideoCapture() from OpenCV according to MAR values that will be set up and passed values to parameters of Haar detection function. Once the values meet the range of MAR and Haar detection function, the image will be auto captured and saved to the directory. Finally, the windows of the video streaming will be destroyed.
 
+
 # 4. EXPERIMENT
 For this project, we are comparing two existing algorithms which are by using Haar Feature Selection and Mouth Aspect Ratio (MAR) to determine which method will be implemented in the auto capture image during video live stream. We conducted a test for both approaches to analyse which methods perform better at smile detection by measuring the accuracy, precision, recall, and F1-score. The performance evaluation using confusion matrix is made in terms of achieving the best trade-off between correct detection and false detection during the testing of the dataset. After the testing is complete, live detection of smiles during a selfie will be implemented using a webcam in real-time. This is to test whether the algorithm works for both static and non-static images.
 
@@ -97,13 +100,19 @@ minSize = (30, 30)
 # 5. CONCLUSION
 As a conclusion, this project was to capture a selfie with smile detection. Two methods were used which are Haar Feature Selection and Mouth Aspect Ratio (MAR). With good feature selections and threshold values for Haar and MAR respectively, both methods showed good results on capturing selfie using the real-time webcam. Meanwhile, these two methods were also compared to identify which method is more superior. From the tests conducted, MAR is generally better at detecting a smile. This is because it focuses on detecting the mouth figure on a person’s face, while Haar focuses on finding features using the right haarcascade values. However, Haar also proved to be a good method to detect smiles depending on the features selected, and MAR could be worse if the threshold value is not set accurately. Furthermore, from the tests conducted, Haar and MAR works better for non-static images when detecting a smile. In future works, Haar and MAR could be combined to get a higher performance in smile detection.
 
-# 6. REFERENCES
 
+# 6. REFERENCES
 [1] J. Whitehill, G. Littlewort, I. Fasel, M. Bartlett and J. Movellan, "Toward Practical Smile Detection," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 31, no. 11, p. 2106, November 2009. 
+
 [2] C.-S. F. Yu-Hao Huang, "FACE DETECTION AND SMILE DETECTION," 2020. 
+
 [3] Winal Zikril Zulkifli, Syamimi Shamsuddin, Fairul Azni Jafar, Rabiah Ahmad, Azizah Abdul Manaf, Alaa Abdulsalam Alarood, Lim Thiam Hwee, "Smile Detection Tool using OpenCV-Python to Measure Response in Human-Robot Interaction with Animal Robot PARO," (IJACSA) International Journal of Advanced Computer Science and Applications, vol. 9, no. 11, 2018. 
+
 [4] DataFlair Team, "Python Project – Auto-capture Selfie by Detecting Smile," 18 August 2020. [Online]. Available: https://data-flair.training/blogs/python-project-capture-selfie-by-detecting-smile/.
+
 [5] R. Agarwal, "Smilefie: how you can auto-capture selfies by detecting a smile," 7 August 2018. [Online]. Available: https://www.freecodecamp.org/news/smilfie-auto-capture-selfies-by-detecting-a-smile-using-opencv-and-python-8c5cfb6ec197/.
+
 [6] Hromada, D, "SMILEsmileD," GitHub, 28 October 2010. [Online]. Available: https://github.com/hromi/SMILEsmileD.
+
 [7] Huzeyfe Kurt, "Make People Smile Project," 15 May 2016. [Online]. Available: https://www.youtube.com/watch?v=8YuBxP4CKZc. 
 
